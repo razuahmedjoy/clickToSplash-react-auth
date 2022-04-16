@@ -30,7 +30,7 @@ const Footer = () => {
                     <h3 className="text-light py-2">Important Links</h3>
                     <div className="important-links">
                         <Link to="/blogs">Blogs</Link>
-                        <Link to="/about-us">About Us</Link>
+                        <Link to="/about">About Me</Link>
                         <Link to="/notFOund">Not Found Page</Link>
                     </div>
                 </div>
