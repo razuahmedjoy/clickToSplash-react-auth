@@ -26,7 +26,7 @@ const Register = () => {
     const [userError,setUserError] = useState('');
     
     const navigate = useNavigate()
-    if(loading || loading2) {
+    if(loading) {
         return <Loading></Loading>
     }
     if(user || createduser){

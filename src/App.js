@@ -10,6 +10,7 @@ import Footer from './components/Partials/Footer/Footer';
 import Header from './components/Partials/Header/Header';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/home" element={<Home></Home>}></Route>
       <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       <Route path="/about" element={<About></About>}></Route>
+      <Route path="/services" element={<Services></Services>}></Route>
       <Route path="/checkout" element={
       <RequireAuth>
       <CheckOut></CheckOut>
