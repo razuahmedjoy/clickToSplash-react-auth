@@ -16,7 +16,7 @@ const Header = () => {
                             <NavLink to="/services">Services</NavLink>
                           
                         </Nav>
-                        <Nav className="ms-auto d-flex justify-content-center align-items-center">
+                        <Nav className="d-flex justify-content-center align-items-center">
 
                             <NavLink to="/login">Login</NavLink>
                             <NavLink to="/register">

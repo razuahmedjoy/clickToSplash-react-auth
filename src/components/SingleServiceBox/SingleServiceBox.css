@@ -1,0 +1,38 @@
+.single-service {
+    cursor: pointer;
+    padding: 2rem 2rem;
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    
+}
+.single-service:hover {
+    background-color: var(--main);
+    color: #fff;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.fa-circle-right{
+    transition: all 0.3s ease-in-out;
+    
+}
+.single-service:hover .fa-circle-right {
+    color: #fff;
+}
+.single-service:hover .book-now{
+    background-color: #fff;
+    color:var(--main) !important;
+}
+.service-texts{
+    text-align: left !important;
+}
+.service-texts ul li{
+    padding:5px 0;
+}
+ul {
+    padding-left: 0 !important;
+}

@@ -1,0 +1,17 @@
+.form-container{
+    max-width: 400px;
+    margin: 3rem auto;
+    padding:2rem;
+    text-align: left;
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: -4px 4px 0px 0px var(--main);
+}
+form a{
+    text-decoration: none;
+    color: var(--main);
+}

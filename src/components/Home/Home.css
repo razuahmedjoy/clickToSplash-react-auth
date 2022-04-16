@@ -28,3 +28,40 @@
     background-color: var(--main);
     color: #fff;
 }
+.single-feature .icons{
+    font-size: 78px;
+    margin-bottom: 1rem;
+    color:var(--main);
+}
+.single-feature{
+    width: 400px;
+    height: 250px;
+    margin: 0 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.single-feature:hover{
+    box-shadow: 1px 1px 8px #bababa;
+
+}
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
