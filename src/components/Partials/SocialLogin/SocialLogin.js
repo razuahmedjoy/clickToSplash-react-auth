@@ -7,20 +7,23 @@ import githubIcon from '../../../images/github.png'
 
 // for firebase authentication
 import auth from '../../../firebase.init';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import Loading from '../Loading/Loading';
 import { useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const navigate = useNavigate()
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
 
     
 
     return (
         <div>
             { error && <p className="text-danger mt-3">
-                <small>{error.message}</small></p>}
+                <small>{error?.message}</small></p>}
+            { error2 && <p className="text-danger mt-3">
+                <small>{error?.message}</small></p>}
             <div className="d-flex justify-content-center align-items-center">
                 <div className="line"></div>
                 <p className="my-3 mx-3">Or</p>
@@ -35,8 +38,8 @@ const SocialLogin = () => {
                     <img className="img-fluid mx-2" src={fbIcon} width="15px" height="15px" alt="fb" />
                     Sign in With Facebook
                 </button>
-                <button className="w-100 btn btn-outline-secondary">
-                    <img className="img-fluid mx-2" src={githubIcon} width="15px" height="15px" alt="github" />
+                <button onClick={()=>signInWithGithub()} className="w-100 btn btn-outline-secondary">
+                    <img  className="img-fluid mx-2" src={githubIcon} width="15px" height="15px" alt="github" />
                     Sign in With Github
                 </button>
             </div>
