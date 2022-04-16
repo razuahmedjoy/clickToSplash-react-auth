@@ -1,11 +1,30 @@
-# Getting Started with Create React App
+# Click To Splash ( A Photography service related Project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Link [Will Update](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Used Technology
+* React
+* React router
+* React bootstrap
+* React Firebase Hooks
+* Firebase for Authentication
+* React FontAwesome Icon
+* Toastify
 
-In the project directory, you can run:
+## What users Can Do? 
+In this project User can Book any service after login. Without Login User can not Book any service.
 
+### Social Logins are configured
+- Google
+- Facebook
+- Github
+
+
+to run This project clone the git repository and then open the project folder in Command Prompt
+
+Run Below commands
+
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
