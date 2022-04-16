@@ -15,25 +15,29 @@ import Services from './components/Services/Services';
 function App() {
   return (
     <div className="App">
-     <Header></Header>
-     <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      <Route path="/home" element={<Home></Home>}></Route>
-      <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-      <Route path="/about" element={<About></About>}></Route>
-      <Route path="/services" element={<Services></Services>}></Route>
-      <Route path="/checkout" element={
-      <RequireAuth>
-      <CheckOut></CheckOut>
-      </RequireAuth>}></Route>
-      <Route path="/login" element={<Login></Login>}></Route>
-      <Route path="/register" element={<Register></Register>}></Route>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/services" element={<Services></Services>}></Route>
+        <Route path="/checkout">
+          <Route path=":serviceid" element={
+            <RequireAuth>
+              <CheckOut></CheckOut>
+            </RequireAuth>}>
 
-      {/* not found 404 route */}
-      <Route path="*" element={<NotFound404></NotFound404>}></Route>
-     </Routes>
+          </Route>
+        </Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
 
-     <Footer></Footer>
+        {/* not found 404 route */}
+        <Route path="*" element={<NotFound404></NotFound404>}></Route>
+      </Routes>
+
+      <Footer></Footer>
     </div>
   );
 }

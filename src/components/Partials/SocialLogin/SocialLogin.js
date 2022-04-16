@@ -23,7 +23,7 @@ const SocialLogin = () => {
             { error && <p className="text-danger mt-3">
                 <small>{error?.message}</small></p>}
             { error2 && <p className="text-danger mt-3">
-                <small>{error?.message}</small></p>}
+                <small>{error2?.message}</small></p>}
             <div className="d-flex justify-content-center align-items-center">
                 <div className="line"></div>
                 <p className="my-3 mx-3">Or</p>
@@ -34,10 +34,10 @@ const SocialLogin = () => {
                 <button onClick={()=>signInWithGoogle()} className="w-100 btn btn-outline-danger">
                     <img className="img-fluid mx-2" src={googleIcon} width="15px" height="15px" alt="Google" />
                     Sign in With Google</button>
-                <button className="w-100 btn btn-outline-primary">
+                {/* <button className="w-100 btn btn-outline-primary">
                     <img className="img-fluid mx-2" src={fbIcon} width="15px" height="15px" alt="fb" />
                     Sign in With Facebook
-                </button>
+                </button> */}
                 <button onClick={()=>signInWithGithub()} className="w-100 btn btn-outline-secondary">
                     <img  className="img-fluid mx-2" src={githubIcon} width="15px" height="15px" alt="github" />
                     Sign in With Github

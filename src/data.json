@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Basic",
+        "price": "200",
+        "image":"https://i.ibb.co/KsVJsBK/pack1.jpg",
+        "features": [
+            "Up to 200 Photos",
+            "50 Edited Photos",
+            "2 Framed Photos",
+            "1 Videos",
+            "Up to 2 Hours"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Advance",
+        "price": "800",
+        "image":"https://i.ibb.co/99VsjC5/pack2.jpg",
+        "features": [
+            "Up to 400 Photos",
+            "100 Edited Photos",
+            "4 Framed Photos",
+            "2 Videos",
+            "Up to 4 Hours"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Premium",
+        "price": "1600",
+        "image":"https://i.ibb.co/LCwsbTv/pack3.jpg",
+        "features": [
+            "Up to 800 Photos",
+            "200 Edited Photos",
+            "8 Framed Photos",
+            "4 Videos",
+            "Up to 24 Hours"
+        ]
+    }
+]

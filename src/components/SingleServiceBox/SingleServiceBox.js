@@ -10,7 +10,7 @@ const SingleServiceBox = ({ service }) => {
     const navigate = useNavigate()
 
     const navigateToCheckOut = () => {
-        navigate('/checkout');
+        navigate('/checkout/'+service.id);
     }
     const { name, price, features,image } = service;
     return (
