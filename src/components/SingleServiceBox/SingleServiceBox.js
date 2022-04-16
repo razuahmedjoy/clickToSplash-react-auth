@@ -19,7 +19,7 @@ const SingleServiceBox = ({service}) => {
                 <ul>
 
                    {
-                       features.map(feature => <li><FontAwesomeIcon className="text-main mx-2" icon={faCircleRight}></FontAwesomeIcon>{feature}</li>)
+                       features.map((feature,index) => <li key={index}><FontAwesomeIcon className="text-main mx-2" icon={faCircleRight}></FontAwesomeIcon>{feature}</li>)
                    }
 
                 </ul>

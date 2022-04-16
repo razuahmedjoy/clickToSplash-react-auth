@@ -1,10 +1,21 @@
 import { Button } from 'react-bootstrap';
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../Partials/SocialLogin/SocialLogin';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import Loading from '../Partials/Loading/Loading';
 
 const Register = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const navigate = useNavigate()
+    if(loading) {
+        return <Loading></Loading>
+    }
+    if(user){
+        navigate('/')
+    }
     return (
         <div>
         <div className="form-container mx-2 mx-md-auto">

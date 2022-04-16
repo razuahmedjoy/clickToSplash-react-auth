@@ -4,17 +4,31 @@ import './SocialLogin.css'
 import googleIcon from '../../../images/google.png'
 import fbIcon from '../../../images/facebook.png'
 import githubIcon from '../../../images/github.png'
+
+// for firebase authentication
+import auth from '../../../firebase.init';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import Loading from '../Loading/Loading';
+import { useNavigate } from 'react-router-dom';
+
 const SocialLogin = () => {
+    const navigate = useNavigate()
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
+    
+
     return (
         <div>
+            { error && <p className="text-danger mt-3">
+                <small>{error.message}</small></p>}
             <div className="d-flex justify-content-center align-items-center">
                 <div className="line"></div>
                 <p className="my-3 mx-3">Or</p>
                 <div className="line"></div>
             </div>
-
+            
             <div className="social-buttons d-flex flex-column justify-content-center align-items-center gap-2 mx-3">
-                <button className="w-100 btn btn-outline-danger">
+                <button onClick={()=>signInWithGoogle()} className="w-100 btn btn-outline-danger">
                     <img className="img-fluid mx-2" src={googleIcon} width="15px" height="15px" alt="Google" />
                     Sign in With Google</button>
                 <button className="w-100 btn btn-outline-primary">
