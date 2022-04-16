@@ -6,16 +6,16 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDJA_jmnK_FRmFrqT0d9LJt_m-ycC1kswY",
-  authDomain: "click-to-splash.firebaseapp.com",
-  projectId: "click-to-splash",
-  storageBucket: "click-to-splash.appspot.com",
-  messagingSenderId: "465331323149",
-  appId: "1:465331323149:web:0209c9bc0cc8f667847044"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app)
-export default auth;
+export default auth
