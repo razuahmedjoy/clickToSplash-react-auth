@@ -1,6 +1,10 @@
+img.card-img-top {
+    height: 170px;
+    object-fit: cover;
+}
+
 .single-service {
     cursor: pointer;
-    padding: 2rem 2rem;
     border: 1px solid var(--main);
     border-radius: 10px;
     text-align: center;
