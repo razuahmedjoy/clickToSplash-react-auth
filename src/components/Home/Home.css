@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 766px) {
+
+    .btn-outline-main{
+        margin: 0 auto;
+    }
+    
+    
+}
+@media screen and (min-width: 768px) {
+
+    .hero-description{
+        text-align: left;
+    }
+    
+    
+}
+.text-main{
+    color:var(--main);
+    font-weight: bold;
+}
+.btn-outline-main {
+    color: var(--main);
+    border-color: var(--main);
+  }
+
+.btn-outline-main:hover{
+    background-color: var(--main);
+    color: #fff;
+}
