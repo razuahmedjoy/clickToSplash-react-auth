@@ -4,6 +4,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound404 from './components/NotFound404/NotFound404';
+import Footer from './components/Partials/Footer/Footer';
 import Header from './components/Partials/Header/Header';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
@@ -25,6 +26,8 @@ function App() {
       {/* not found 404 route */}
       <Route path="*" element={<NotFound404></NotFound404>}></Route>
      </Routes>
+
+     <Footer></Footer>
     </div>
   );
 }

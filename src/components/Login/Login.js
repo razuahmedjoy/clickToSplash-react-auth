@@ -85,7 +85,7 @@ const Login = () => {
                 </Form>
                 <p className="mt-2">
                     <small> Forgot Your Password? 
-                        <span onClick={handlePasswordReset} className="text-main cursor-pointer" role="button">Reset</span></small> </p>
+                        <span onClick={handlePasswordReset} className="text-main cursor-pointer mx-2" role="button">Reset</span></small> </p>
 
                 <SocialLogin></SocialLogin>
             </div>

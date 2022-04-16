@@ -1,0 +1,22 @@
+.footer-top{
+    text-align: left;
+}
+.footer-top div{
+    text-align: left;
+}
+.footer-top p{
+    cursor: pointer;
+}
+.important-links a{
+    display: block;
+    color: var(--main);
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-links{
+    margin-bottom: 1rem;
+}
+.social-links a{
+    margin: .5rem;
+
+}
