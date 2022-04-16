@@ -1,0 +1,19 @@
+#basic-navbar-nav a{
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+    padding: 5px 12px;
+    margin: 0 5px;
+
+}
+.navbar-nav .active{
+    color: var(--main) !important;
+   
+    
+}
+.bg-main{
+    background-color:var(--main);
+}
+.bg-main:hover{
+    background-color:var(--main-hover);
+}

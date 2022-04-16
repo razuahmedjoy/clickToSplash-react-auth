@@ -1,3 +1,9 @@
+:root{
+
+  --main:#6c63ff;
+  --main-hover:#4740d0;
+}
+
 .App {
   text-align: center;
 }
