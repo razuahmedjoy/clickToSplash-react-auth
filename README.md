@@ -11,12 +11,15 @@ Live Link [LIVE LINK](https://click-to-splash.web.app/)
 * React FontAwesome Icon
 * Toastify
 
-## What users Can Do? 
-In this project User can Book any service after login. Without Login User can not Book any service.
+## Features? 
+* User can Create account with Email and Password
+* Social Login (Google and Github)
+* Order any Service
+* If user is not logged in he can not acccess checkout Page
+
 
 ### Social Logins are configured
 - Google
-- Facebook
 - Github
 
 
